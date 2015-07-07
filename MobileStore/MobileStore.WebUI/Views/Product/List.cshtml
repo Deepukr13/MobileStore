@@ -1,0 +1,17 @@
+﻿@model MobileStore.WebUI.Models.ProductsListViewModel 
+
+@{ 
+
+    ViewBag.Title = "Products"; 
+} 
+
+@foreach (var p in Model.Products) { 
+    @Html.ActionLink(p.ProductName, "Details", new { p.ProductID }, null)
+    Html.RenderPartial("ProductSummary", p); 
+} 
+
+<div class="pager"> 
+
+    @Html.PageLinks(Model.PagingInfo, z => Url.Action("List", new {page = z, category = Model.CurrentCategory})) 
+
+</div>

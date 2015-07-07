@@ -1,0 +1,13 @@
+﻿@model MobileStore.Domain.Entities.Product
+
+<div class="item"> 
+        Brand: @Model.BrandName<br />
+        Description: @Model.Description
+
+    @using(Html.BeginForm("AddToCart", "Cart")) { 
+        @Html.HiddenFor(x => x.ProductID) 
+        @Html.Hidden("returnUrl", Request.Url.PathAndQuery) 
+            <input type="submit" value="+ Add to cart" /> 
+    }
+        <h4>Price: @Model.Price.ToString("c")</h4> 
+    </div> 

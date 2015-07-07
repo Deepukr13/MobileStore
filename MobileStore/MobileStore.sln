@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobileStore.Domain", "MobileStore.Domain\MobileStore.Domain.csproj", "{3EFFEE28-5019-456F-B7CB-5CFE66599C07}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobileStore.WebUI", "MobileStore.WebUI\MobileStore.WebUI.csproj", "{BCB0F4F1-499B-4B7E-8DA2-CB21B5634DA4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3EFFEE28-5019-456F-B7CB-5CFE66599C07} = {3EFFEE28-5019-456F-B7CB-5CFE66599C07}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3EFFEE28-5019-456F-B7CB-5CFE66599C07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EFFEE28-5019-456F-B7CB-5CFE66599C07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EFFEE28-5019-456F-B7CB-5CFE66599C07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EFFEE28-5019-456F-B7CB-5CFE66599C07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCB0F4F1-499B-4B7E-8DA2-CB21B5634DA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCB0F4F1-499B-4B7E-8DA2-CB21B5634DA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCB0F4F1-499B-4B7E-8DA2-CB21B5634DA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCB0F4F1-499B-4B7E-8DA2-CB21B5634DA4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

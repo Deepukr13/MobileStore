@@ -1,0 +1,23 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <script src="~/Scripts/jquery-1.7.1.js"></script> 
+<script src="~/Scripts/jquery.validate.min.js"></script> 
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script> 
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+</head>
+<body>
+    <div> 
+@if (TempData["message"] != null) { 
+<div class="Message">@TempData["message"]</div> 
+} 
+@RenderBody() 
+</div> 
+</body> 
+</html>

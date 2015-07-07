@@ -1,0 +1,17 @@
+﻿@model MobileStore.Domain.Entities.Product
+
+@{
+    ViewBag.Title = "Details";
+}
+    <h3>@Model.ProductName</h3><br />
+  Brand:  @Model.BrandName<br />
+  Description:  @Model.Description<br />
+   Price:  @Model.Price<br />
+   Product Type: @Model.ProductType<br />
+    @using (Html.BeginForm("AddToCart", "Cart"))
+    {
+        @Html.HiddenFor(x => x.ProductID)
+        @Html.Hidden("returnUrl", Request.Url.PathAndQuery)
+        <input type="submit" value="+ Add to cart" />
+    }
+    <h4>@Model.Price.ToString("c")</h4>
